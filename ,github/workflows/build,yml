@@ -1,0 +1,20 @@
+name: Build App
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Buraya projenin türüne göre kurulum adımları gelir
+      # Örnek: JDK, Flutter veya Node.js kurulumu
+
+      - name: Build project
+        run: echo "Derleme komutu buraya gelecek"
